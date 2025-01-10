@@ -1,1 +1,29 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAP Checker</title>
+</head>
+<body>
+    <h1>IMAP Checker</h1>
+    <form action="/run" method="post">
+        <label for="input_file">Input File:</label>
+        <input type="text" id="input_file" name="input_file" required><br>
+        <label for="output_file">Output File:</label>
+        <input type="text" id="output_file" name="output_file" required><br>
+        <label for="threads">Threads:</label>
+        <input type="text" id="threads" name="threads" required><br>
+        <label for="matchers_file">Matchers File:</label>
+        <input type="text" id="matchers_file" name="matchers_file"><br>
+        <label for="timeout">Timeout (sec):</label>
+        <input type="text" id="timeout" name="timeout" required><br>
+        <input type="checkbox" id="invunma" name="invunma">
+        <label for="invunma">Log Invalid & Unmatched Accounts</label><br>
+        <input type="checkbox" id="grabber" name="grabber">
+        <label for="grabber">Grab Matchers</label><br>
+        <button type="submit">Run</button>
+    </form>
+</body>
+</html>
